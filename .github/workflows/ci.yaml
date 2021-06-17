@@ -10,7 +10,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
       - name: build
-        run:  docker image build --tag santander-phpinfo:test -file Dockerfile ./
+        run:  docker image build --tag santander-phpinfo:test -file Dockerfile .
       - name: network
         run: docker network create santander-phpinfo
       - name: run
